@@ -1,0 +1,45 @@
+{
+  "name": "informasi",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "subjek": {
+      "type": "string",
+      "required": true
+    },
+    "kepada": {
+      "type": "string",
+      "required": true,
+      "default": "n"
+    },
+    "deskripsi": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "admin": {
+      "type": "belongsTo",
+      "model": "admin",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}
