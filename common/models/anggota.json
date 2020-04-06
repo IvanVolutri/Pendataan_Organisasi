@@ -1,0 +1,51 @@
+{
+  "name": "anggota",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nama_lengkap": {
+      "type": "string",
+      "required": true
+    },
+    "no_hp": {
+      "type": "number"
+    },
+    "asal": {
+      "type": "string"
+    },
+    "alamat": {
+      "type": "string"
+    },
+    "jabatan": {
+      "type": "string"
+    },
+    "agama": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "iurans": {
+      "type": "hasMany",
+      "model": "iuran",
+      "foreignKey": ""
+    },
+    "kegiatans": {
+      "type": "hasMany",
+      "model": "kegiatan",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

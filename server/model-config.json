@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "admin": {
+    "dataSource": "Pendataan_Organisasi",
+    "public": true
+  },
+  "anggota": {
+    "dataSource": "Pendataan_Organisasi",
+    "public": true
+  },
+  "informasi": {
+    "dataSource": "Pendataan_Organisasi",
+    "public": true
+  },
+  "iuran": {
+    "dataSource": "Pendataan_Organisasi",
+    "public": true
+  },
+  "kegiatan": {
+    "dataSource": "Pendataan_Organisasi",
+    "public": true
+  }
+}

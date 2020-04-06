@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "Pendataan_Organisasi": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "Pendataan_Organisasi",
+    "password": "",
+    "name": "Pendataan_Organisasi",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}
