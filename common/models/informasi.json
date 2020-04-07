@@ -17,6 +17,9 @@
     },
     "deskripsi": {
       "type": "string"
+    },
+    "file": {
+      "type": "string"
     }
   },
   "validations": [],
