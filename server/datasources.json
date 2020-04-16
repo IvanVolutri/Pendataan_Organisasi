@@ -4,7 +4,7 @@
     "connector": "memory"
   },
   "Pendataan_Organisasi": {
-    "host": "localhost",
+    "host": "128.199.83.167",
     "port": 27017,
     "url": "",
     "database": "Pendataan_Organisasi",
