@@ -13,6 +13,8 @@ const app = module.exports = loopback();
 app.start = function() {
   // start the web server
   return app.listen(function() {
+    app.models.anggota.settings.acls = require('../common/models/anggota.json').acls
+    app.models.admin.settings.acls = require('../common/models/admin.json').acls
     app.emit('started');
     const baseUrl = app.get('url').replace(/\/$/, '');
     console.log('Web server listening at: %s', baseUrl);
